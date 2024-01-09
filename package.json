@@ -1,6 +1,6 @@
 {
   "name": "http-ws-hw-starter",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Starter for HTTP / WS homework. Binary Studio Academy",
   "type": "module",
   "engines": {
@@ -8,7 +8,7 @@
     "npm": "10.x.x"
   },
   "scripts": {
-    "start": "nodemon --exec \"node --loader ts-node/esm\" src/server.ts",
+    "dev": "nodemon --exec \"node --loader ts-node/esm\" src/server.ts",
     "build": "tsc",
     "format:check": "npx prettier --check \"**/*.{ts,mjs,css,md,html}\"",
     "format:fix": "npx prettier --write \"**/*.{ts,mjs,css,md,html}\""
@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "nodemon": "3.0.2",
-    "prettier": "^3.1.1",
+    "prettier": "3.1.1",
     "ts-node": "10.9.2",
     "typescript": "5.3.3"
   }
