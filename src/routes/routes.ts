@@ -4,6 +4,6 @@ import loginRoutes from './login.js';
 import gameRoutes from './game.js';
 
 export default (app: Express) => {
-	app.use('/login', loginRoutes);
-	app.use('/game', gameRoutes);
+    app.use('/login', loginRoutes);
+    app.use('/game', gameRoutes);
 };

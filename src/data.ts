@@ -5,7 +5,7 @@ export const texts = [
     'My fourth super text!',
     'My fifth super text!',
     'My sixth super text!',
-    'My seventh super text!',
+    'My seventh super text!'
 ];
 
 export default { texts };
