@@ -1,4 +1,4 @@
-import { createElement } from '../helpers/domHelper.mjs';
+import { createElement } from '../helpers/dom-helper.mjs';
 
 const appendRoomElement = ({ name, numberOfUsers, onJoin = () => {} }) => {
 	const roomsContainer = document.querySelector('#rooms-wrapper');

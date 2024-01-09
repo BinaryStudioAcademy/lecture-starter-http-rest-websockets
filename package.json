@@ -2,12 +2,13 @@
   "name": "http-ws-hw-starter",
   "version": "1.0.0",
   "description": "Starter for HTTP / WS homework. Binary Studio Academy",
+  "type": "module",
   "engines": {
     "node": "20.x.x",
     "npm": "10.x.x"
   },
   "scripts": {
-    "start": "nodemon src/server.ts",
+    "start": "nodemon --exec \"node --loader ts-node/esm\" src/server.ts",
     "build": "tsc"
   },
   "keywords": [

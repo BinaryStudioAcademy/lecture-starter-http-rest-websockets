@@ -1,4 +1,4 @@
-import { createElement } from '../helpers/domHelper.mjs';
+import { createElement } from '../helpers/dom-helper.mjs';
 
 const showInputModal = ({ title, onChange = () => {}, onSubmit = () => {} }) => {
 	const rootElement = document.querySelector('#root');

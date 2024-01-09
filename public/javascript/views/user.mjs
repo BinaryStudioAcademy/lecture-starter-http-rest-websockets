@@ -1,5 +1,4 @@
-import { addClass } from '../helpers/domHelper.mjs';
-import { createElement } from '../helpers/domHelper.mjs';
+import { addClass, createElement } from '../helpers/dom-helper.mjs';
 
 const appendUserElement = ({ username, ready, isCurrentUser }) => {
 	const usersContainer = document.querySelector('#users-wrapper');
