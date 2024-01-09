@@ -9,7 +9,9 @@
   },
   "scripts": {
     "start": "nodemon --exec \"node --loader ts-node/esm\" src/server.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "format:check": "npx prettier --check \"**/*.{ts,mjs,css,md,html}\"",
+    "format:fix": "npx prettier --write \"**/*.{ts,mjs,css,md,html}\""
   },
   "keywords": [
     "bsa",
@@ -25,6 +27,7 @@
   },
   "devDependencies": {
     "nodemon": "3.0.2",
+    "prettier": "^3.1.1",
     "ts-node": "10.9.2",
     "typescript": "5.3.3"
   }
