@@ -1,10 +1,10 @@
 {
     "name": "http-ws-hw-starter",
-    "version": "3.0.0",
+    "version": "4.0.0",
     "description": "Starter for HTTP / WS homework. Binary Studio Academy",
     "type": "module",
     "engines": {
-        "node": "20.x.x",
+        "node": "22.x.x",
         "npm": "10.x.x"
     },
     "scripts": {
@@ -20,15 +20,15 @@
     "author": "Kyrylo Burmelov",
     "license": "ISC",
     "dependencies": {
-        "@types/express": "4.17.21",
-        "@types/node": "20.10.8",
-        "express": "4.19.2",
-        "socket.io": "4.7.5"
+        "express": "5.1.0",
+        "socket.io": "4.8.1"
     },
     "devDependencies": {
-        "prettier": "3.1.1",
+        "@types/express": "5.0.2",
+        "@types/node": "22.15.29",
+        "prettier": "3.5.3",
         "ts-node": "10.9.2",
-        "tsx": "4.15.6",
-        "typescript": "5.3.3"
+        "tsx": "4.19.4",
+        "typescript": "5.8.3"
     }
 }
