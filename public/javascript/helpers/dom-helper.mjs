@@ -5,9 +5,9 @@ export const createElement = ({ tagName, className, attributes = {}, innerElemen
         addClass(element, className);
     }
 
-    Object.keys(attributes).forEach(key => element.setAttribute(key, attributes[key]));
+    Object.keys(attributes).forEach((key) => element.setAttribute(key, attributes[key]));
 
-    innerElements.forEach(innerElement => element.append(innerElement));
+    innerElements.forEach((innerElement) => element.append(innerElement));
 
     return element;
 };
@@ -22,4 +22,4 @@ export const removeClass = (element, className) => {
     element.classList.remove(...classNames);
 };
 
-export const formatClassNames = className => className.split(' ').filter(Boolean);
+export const formatClassNames = (className) => className.split(" ").filter(Boolean);

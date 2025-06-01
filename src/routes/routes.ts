@@ -1,9 +1,11 @@
-import { Express } from 'express';
+import { type Express } from "express";
 
-import signinRoutes from './signin.js';
-import gameRoutes from './game.js';
+import { router as gameRouter } from "./game.js";
+import { router as signinRouter } from "./signin.js";
 
-export default (app: Express) => {
-    app.use('/signin', signinRoutes);
-    app.use('/game', gameRoutes);
+const rootRouter = (app: Express): void => {
+    app.use("/signin", signinRouter);
+    app.use("/game", gameRouter);
 };
+
+export { rootRouter };

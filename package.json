@@ -10,8 +10,13 @@
     "scripts": {
         "dev": "tsx watch src/server.ts",
         "build": "tsc",
-        "format:check": "npx prettier --check \"**/*.{ts,mjs,css,md,html}\"",
-        "format:fix": "npx prettier --write \"**/*.{ts,mjs,css,md,html}\""
+        "lint:editor": "editorconfig-checker",
+        "lint:fs": "ls-lint",
+        "lint:type": "npx tsc --noEmit",
+        "lint:js": "npx eslint . --max-warnings=0 --no-warn-ignored",
+        "lint:format": "prettier --check \"**/*.{ts,mjs,css,md,html}\"",
+        "format:fix": "npx prettier --write \"**/*.{ts,mjs,css,md,html}\"",
+        "git:hook:precommit": "lint-staged --cwd ."
     },
     "keywords": [
         "bsa",
@@ -24,11 +29,33 @@
         "socket.io": "4.8.1"
     },
     "devDependencies": {
+        "@eslint/js": "9.28.0",
+        "@ls-lint/ls-lint": "2.3.0",
+        "@stylistic/eslint-plugin": "4.4.0",
+        "@types/eslint": "9.6.1",
+        "@types/eslint__js": "8.42.3",
         "@types/express": "5.0.2",
+        "@types/lint-staged": "13.3.0",
         "@types/node": "22.15.29",
+        "@typescript-eslint/eslint-plugin": "8.33.0",
+        "@typescript-eslint/parser": "8.33.0",
+        "editorconfig-checker": "6.0.1",
+        "eslint": "9.28.0",
+        "eslint-import-resolver-typescript": "4.4.2",
+        "eslint-plugin-import": "2.31.0",
+        "eslint-plugin-jsdoc": "50.7.0",
+        "eslint-plugin-perfectionist": "4.13.0",
+        "eslint-plugin-require-explicit-generics": "1.0.0",
+        "eslint-plugin-sonarjs": "3.0.2",
+        "eslint-plugin-unicorn": "59.0.1",
+        "globals": "16.2.0",
+        "lint-staged": "16.1.0",
         "prettier": "3.5.3",
         "ts-node": "10.9.2",
         "tsx": "4.19.4",
         "typescript": "5.8.3"
+    },
+    "simple-git-hooks": {
+        "pre-commit": "npm run lint:type && npm run git:hook:precommit"
     }
 }

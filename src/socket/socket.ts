@@ -1,9 +1,9 @@
-import { Server } from 'socket.io';
+import { type Server } from "socket.io";
 
-import * as config from './config.js';
-
-export default (io: Server) => {
-    io.on('connection', socket => {
-        const username = socket.handshake.query.username;
+const socketHandler = (io: Server): void => {
+    io.on("connection", (socket) => {
+        const { username: _username } = socket.handshake.query;
     });
 };
+
+export { socketHandler };
