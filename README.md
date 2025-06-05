@@ -3,18 +3,22 @@
 ## 🏃‍♂️ Simple start
 
 1. **`npm install`** at the root
-2. **`npm run dev`** at the root
-3. open **`http://localhost:3001/`**
+2. **`npx simple-git-hooks`** at the root
+3. **`npm run dev`** at the root
+4. open **`http://localhost:3421/`**
 
-## 🧹 Code style
+## 🧹 Code quality
 
-Run **`npm run format:check`** at the root to check code style.
+We use linters to check code quality. All linters will run during commit. Make sure to enable pre-commit hook by running `npx simple-git-hooks`
 
-Run **`npm run format:fix`** at the root to fix code style.
+To run linters manually, use the following commands:
 
-## 💡 PS
+- `npm run lint:editor`
+- `npm run lint:fs`
+- `npm run lint:js`
+- `npm run lint:format`
+- `npm run lint:type`
 
-The project has a [Prettier](https://prettier.io/) set up, to validate your code.
-Please use it!
+Run **`npm run format:fix`** at the root to fix code style issues.
 
 ## 🤞 Good luck
