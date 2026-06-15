@@ -6,6 +6,6 @@ const __dirname = path.dirname(__filename);
 
 const STATIC_PATH = path.join(__dirname, "..", "public");
 const HTML_FILES_PATH = path.join(STATIC_PATH, "html");
-const PORT = 3421;
+const PORT = 3517;
 
 export { HTML_FILES_PATH, PORT, STATIC_PATH };
