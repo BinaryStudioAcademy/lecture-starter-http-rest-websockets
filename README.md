@@ -1,11 +1,11 @@
 # HTTP, REST, WebSockets
 
-## 🏃‍♂️ Simple start
+## ⌨️ Simple start
 
 1. **`npm install`** at the root
 2. **`npx simple-git-hooks`** at the root
 3. **`npm run dev`** at the root
-4. open **`http://localhost:3421/`**
+4. open **`http://localhost:3517/`**
 
 ## 🧹 Code quality
 
